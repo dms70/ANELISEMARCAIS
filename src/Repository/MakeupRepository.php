@@ -19,6 +19,21 @@ class MakeupRepository extends ServiceEntityRepository
         parent::__construct($registry, Makeup::class);
     }
 
+    /**
+    * @return Makeup[] Returns an array of Makeup objects
+    */
+    
+    public function lastTree()
+    {
+        return $this->createQueryBuilder('m')
+            ->orderBy('m.id', 'DESC')
+            ->setMaxResults(3)
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+}
+
     // /**
     //  * @return Makeup[] Returns an array of Makeup objects
     //  */
@@ -47,4 +62,4 @@ class MakeupRepository extends ServiceEntityRepository
         ;
     }
     */
-}
+
