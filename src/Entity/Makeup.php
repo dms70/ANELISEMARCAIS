@@ -75,18 +75,18 @@ class Makeup
     private $file;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="makeups")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="makeups")
      * @ORM\JoinColumn(nullable=false)
      */
     private $users;
 
     /**
-     * @ORM\ManyToMany(targetEntity=category::class, inversedBy="makeups")
+     * @ORM\ManyToMany(targetEntity=Category::class, inversedBy="makeups")
      */
     private $categories;
 
     /**
-     * @ORM\ManyToOne(targetEntity=prestation::class, inversedBy="makeups")
+     * @ORM\ManyToOne(targetEntity=Prestation::class, inversedBy="makeups")
      */
     private $prestations;
 

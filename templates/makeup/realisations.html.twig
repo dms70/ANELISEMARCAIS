@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MakeupController!{% endblock %}
+
+{% block body %}
+
+{% for makeup in makeups %}
+
+<p>{{makeup.title}}</p>
+
+{% endfor %}
+
+{% endblock %}
