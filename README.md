@@ -18,4 +18,6 @@ git checkout "your branch"
 pull
 git branch -d "yourbranch"
 
+transfert
 
+git clone 
