@@ -39,8 +39,7 @@ class EasyAdminSubscriber implements EventSubscriberInterface
         $entity->setSlug($slug);
 
         $now = new DateTime ('now');
-        $entity->setDatemakeup($now);
-
+        $entity->setDate($now);
 
         $user = $this->security->getUser();
         $entity->setUsers($user); 

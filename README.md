@@ -19,5 +19,14 @@ pull
 git branch -d "yourbranch"
 
 transfert
+$ git config --global user.name "DAVID MARCAIS"
+$ git config --global user.email dmarcais@yahoo.com
+git clone https://github.com/dms70/ANELISEMARCAIS.git
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+https://nodejs.org/en/download/
+Download Composer 
+npm install --global yarn
+composer install
+npm install
+composer require symfony/webpack-encore-bundle
 
-git clone 

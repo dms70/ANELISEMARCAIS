@@ -27,7 +27,7 @@ class MakeupRepository extends ServiceEntityRepository
     {
         return $this->createQueryBuilder('m')
             ->orderBy('m.id', 'DESC')
-            ->setMaxResults(3)
+            ->setMaxResults(10)
             ->getQuery()
             ->getResult()
         ;
